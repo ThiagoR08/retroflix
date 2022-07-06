@@ -4,12 +4,14 @@
 .links{
     padding: 7px;
 }
+.links > ::content {
+    background-color: aqua;
+}
 
 h1{
     height: 30px;
     width: 100%;
-    background-color: rgb(63, 63, 63);
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 5px;
-    font-family: 'Berkshire Swash', cursive;
+    text-align: start;
 }

@@ -1,0 +1,111 @@
+<section class="section-default">
+  <h1>Formulário de Cadastro</h1>
+  <div class="formulario-default">
+    <form>
+      <div class="campos-formulario">
+        <label for="Título do Filme">Título do Filme</label>
+        <input type="text" id="titulo" formControlName="titulo" required />
+        <!-- <div *ngIf="titulo.invalid && formDir.submitted" class="erroForm"> -->
+        <!-- <p *ngIf="titulo.errors?.['required']">O título é obrigatório!</p> -->
+        <!-- </div> -->
+        <label for="Subtitulo do Filme"> Subtítulo do Filme </label>
+        <input
+          type="text"
+          id="subtitulo"
+          formControlName="subtitulo"
+          required
+        /><br />
+
+        <label for="url-imag">URL Imagem</label>
+        <input type="text" name="url-imag" id="url-imag" /><br />
+
+        <div class="itens-inputs">
+          <label for="lancamento"> Data de Lançamento </label>
+          <input
+            name="lancamento"
+            id="lancamento"
+            type="number"
+            min="1900"
+            max="2099"
+            step="1"
+            value="1950"
+          /><br />
+
+          <label for="url-trailer">URL Trailer</label>
+          <input type="text" name="url-trailer" id="url-trailer" /><br />
+
+          <label for="duracao">Duração</label>
+          <input
+            name="duracao"
+            type="time"
+            id="duracao"
+            name="appt"
+            min="09:00"
+            max="18:00"
+            required
+          /><br />
+
+          <label for="sinpose">Sinopse</label>
+          <textarea name="sinpose" id="sinpose" cols="30" rows="10"></textarea
+          ><br />
+
+          <label for="cnpj-fornecedor">CNPJ</label>
+          <input
+            type="text"
+            name="cnpj-fornecedor"
+            id="cnpj-fornecedor"
+          /><br />
+
+          <label for="custo">Custo</label>
+          <input type="number" name="custo" id="custo" /><br />
+
+          <label for="valor">Valor</label>
+          <input type="number" name="valor" id="valor" /><br />
+
+          <label for="quantidade">Quantidade</label>
+          <input type="number" name="quantidade" id="quantidade" /><br />
+
+          <label for="categoria">Categoria</label>
+          <select id="categoria">
+            <option>The best</option>
+            <option>Aventura</option>
+            <option>Romance</option>
+            <option>Drama</option>
+            <option>Família</option>
+            <option>Terror</option>
+            <option>Musical</option>
+            <option>Ação</option>
+            <option>Policial</option>
+            <option>Comédia</option>
+            <option>Séries</option>
+            <option>Suspense</option>
+            <option>Ficção Científica</option>
+          </select>
+          <br />
+
+          <label for="elenco">Elenco</label>
+          <input type="text" name="elenco" id="elenco" /><br />
+
+          <label for="diretor">Direção</label>
+          <input type="text" name="diretor" id="diretor" /><br />
+        </div>
+
+        <div class="itens-inputs">
+          <label for="altura">Altura</label>
+          <input type="number" name="altura" id="altura" />
+          <label for="largura">Largura</label>
+          <input type="number" name="largura" id="largura" />
+          <label for="peso">Peso</label>
+          <input type="number" name="peso" id="peso" /><br />
+        </div>
+        <br />
+        
+        <div class="buttons">
+            <input type="submit" value="Enviar" />
+            <input type="submit" value="Alterar"/>
+            <input type="submit" value="Excluir"/>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
